@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../scripts/structures/list.js"></script>
+    <script>
+        // Use cases:
+        // Order of the data being stored doesn't matter
+        // No need to search the data in the structure
+
+        var list = new List();
+        list.append('Dave');
+        list.append('Scott');
+        list.append('Aaron');
+        console.log(list.toString());
+        console.log(list.listSize);
+        list.insert('Nick', 'Dave');
+        console.log(list.toString());
+        console.log(list.listSize);
+        
+        console.log(list.next().next().next().getElement());
+    </script>
+    <script src="http://localhost:35729/livereload.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
